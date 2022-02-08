@@ -66,15 +66,30 @@ static NSString *StringByTrimming(NSString *aString) {
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
       @autoreleasepool {
-          result = [self jsonObjectFromZippedDataWithBytes:kPhoneNumberMetaData
-                                          compressedLength:kPhoneNumberMetaDataCompressedLength
-                                            expandedLength:kPhoneNumberMetaDataExpandedLength];
+          // deduplicating the result is *very* expensive. The result should be persisted because it does not change.
+          NSString *dir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+          NSString *filename = [NSString stringWithFormat:@"phoneNumberDataMap.%zu.%zu.plist", kPhoneNumberMetaDataCompressedLength, kPhoneNumberMetaDataExpandedLength];
+          NSString *path = [dir stringByAppendingPathComponent:filename];
+          NSData *fileContent = [NSData dataWithContentsOfFile:path];
+          if (fileContent != nil) {
+              NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:fileContent];
+              unarchiver.requiresSecureCoding = YES;
+              NSSet *allowedClasses = [NSSet setWithArray:@[NSArray.class, NSDictionary.class, NSNull.class, NSString.class, NSNumber.class]];
+              result = (NSDictionary *)[unarchiver decodeObjectOfClasses:allowedClasses forKey:NSKeyedArchiveRootObjectKey];
+          }
+          if (result == nil) {
+              result = [self jsonObjectFromZippedDataWithBytes:kPhoneNumberMetaData
+                                              compressedLength:kPhoneNumberMetaDataCompressedLength
+                                                expandedLength:kPhoneNumberMetaDataExpandedLength];
 
-          // The jsonMap is large and held in memory.
-          // It's contents are deeply nested and very repetitive.
-          // We can greatly reduce the memory used by jsonMap
-          // by traversing its contents and de-duplicating repeated values.
-          result = [self deduplicateJsonMap:result];
+              // The jsonMap is large and held in memory.
+              // It's contents are deeply nested and very repetitive.
+              // We can greatly reduce the memory used by jsonMap
+              // by traversing its contents and de-duplicating repeated values.
+              result = [self deduplicateJsonMap:result];
+              NSData *data = [NSKeyedArchiver archivedDataWithRootObject:result requiringSecureCoding:NO error:NULL];
+              [data writeToFile:path atomically:YES];
+          }
       }
   });
   return result;
