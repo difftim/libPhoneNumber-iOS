@@ -43,6 +43,8 @@
 		14B7A2B41DE9BF160051AED7 /* NBPhoneNumberDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D6A281BECC43A00F68F34 /* NBPhoneNumberDefines.m */; };
 		14B7A2B51DE9BF160051AED7 /* NBPhoneNumberUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8B84321934C35F00C350EB /* NBPhoneNumberUtil.m */; };
 		14B7A2B61DE9BF160051AED7 /* NBAsYouTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8B84271934C35F00C350EB /* NBAsYouTypeFormatter.m */; };
+		14E06D5127B3DAFA007754F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E06D5027B3DAFA007754F4 /* main.m */; };
+		14E06D5727B3DDF0007754F4 /* MetaDataPlistCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E06D5627B3DDF0007754F4 /* MetaDataPlistCreator.m */; };
 		1F31D52E1DDD46B100257818 /* libPhoneNumberwatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F31D52C1DDD46B100257818 /* libPhoneNumberwatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F31D5321DDD46B900257818 /* NBMetadataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FD12C2681A87401B00B53856 /* NBMetadataHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F31D5331DDD46BD00257818 /* NBMetadataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD12C2691A87401B00B53856 /* NBMetadataHelper.m */; };
@@ -131,10 +133,6 @@
 		8B1FEF9D1EB7BF6C00FBDE87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6AE8FA1BEE72B600263DE1 /* ViewController.swift */; };
 		8B1FEF9E1EB7BF7000FBDE87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6AE8FC1BEE72B600263DE1 /* Main.storyboard */; };
 		8B1FEF9F1EB7BF7200FBDE87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6AE9011BEE72B600263DE1 /* LaunchScreen.storyboard */; };
-		8B1FEFA01EB7BFC500FBDE87 /* NBGeneratedPhoneNumberMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB73AA71E7C9C6700B0691B /* NBGeneratedPhoneNumberMetaData.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8B1FEFA11EB7BFC500FBDE87 /* NBGeneratedPhoneNumberMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB73AA71E7C9C6700B0691B /* NBGeneratedPhoneNumberMetaData.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8B1FEFA21EB7BFC600FBDE87 /* NBGeneratedPhoneNumberMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB73AA71E7C9C6700B0691B /* NBGeneratedPhoneNumberMetaData.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8B1FEFA31EB7BFC600FBDE87 /* NBGeneratedPhoneNumberMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB73AA71E7C9C6700B0691B /* NBGeneratedPhoneNumberMetaData.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A025047D214C61FD00AFC260 /* NBPhoneNumberUtil+ShortNumberTestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5833091FD1FC9500F26ED4 /* NBPhoneNumberUtil+ShortNumberTestHelper.h */; };
 		A025047E214C61FD00AFC260 /* NBPhoneNumberUtil+ShortNumberTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F58330A1FD1FC9500F26ED4 /* NBPhoneNumberUtil+ShortNumberTestHelper.m */; };
 		A81D6A2B1BECC44600F68F34 /* NBPhoneNumberDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D6A281BECC43A00F68F34 /* NBPhoneNumberDefines.m */; };
@@ -149,6 +147,18 @@
 			remoteInfo = libPhoneNumberiOS;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14E06D4C27B3DAFA007754F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F2870911FCF7936006230BF /* NBPhoneNumberUtil+ShortNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NBPhoneNumberUtil+ShortNumber.h"; sourceTree = "<group>"; };
@@ -166,6 +176,10 @@
 		1485C5251E06F4890092F541 /* NBPhoneNumberUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberUtilTest.m; path = libPhoneNumberTests/NBPhoneNumberUtilTest.m; sourceTree = SOURCE_ROOT; };
 		1485C52B1E06F4930092F541 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = libPhoneNumberTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		14B7A2931DE9B65D0051AED7 /* libPhoneNumberiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libPhoneNumberiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E06D4E27B3DAFA007754F4 /* MetaDataPlistCreator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MetaDataPlistCreator; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E06D5027B3DAFA007754F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14E06D5527B3DDDB007754F4 /* MetaDataPlistCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetaDataPlistCreator.h; sourceTree = "<group>"; };
+		14E06D5627B3DDF0007754F4 /* MetaDataPlistCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetaDataPlistCreator.m; sourceTree = "<group>"; };
 		187A618A1A25DF04000D8BB6 /* PhoneNumberMetaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PhoneNumberMetaData.json; path = libPhoneNumberTests/generatedJSON/PhoneNumberMetaData.json; sourceTree = SOURCE_ROOT; };
 		187A618B1A25DF04000D8BB6 /* PhoneNumberMetaDataForTesting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PhoneNumberMetaDataForTesting.json; path = libPhoneNumberTests/generatedJSON/PhoneNumberMetaDataForTesting.json; sourceTree = SOURCE_ROOT; };
 		1F31D52A1DDD46B100257818 /* libPhoneNumberwatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libPhoneNumberwatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +240,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0FD2F71E4A85AE0049DF81 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E06D4B27B3DAFA007754F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +369,17 @@
 			name = libPhoneNumber.samples;
 			sourceTree = "<group>";
 		};
+		14E06D4F27B3DAFA007754F4 /* MetaDataPlistCreator */ = {
+			isa = PBXGroup;
+			children = (
+				8BB73AA71E7C9C6700B0691B /* NBGeneratedPhoneNumberMetaData.h */,
+				14E06D5027B3DAFA007754F4 /* main.m */,
+				14E06D5527B3DDDB007754F4 /* MetaDataPlistCreator.h */,
+				14E06D5627B3DDF0007754F4 /* MetaDataPlistCreator.m */,
+			);
+			path = MetaDataPlistCreator;
+			sourceTree = "<group>";
+		};
 		1F31D52B1DDD46B100257818 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +447,7 @@
 				14B7A2941DE9B65D0051AED7 /* libPhoneNumber.tests */,
 				14C114F11DE9A9070029FE1C /* libPhoneNumber.samples */,
 				4D43EF831740825100C24FF3 /* libPhoneNumber-iOS.podspec */,
+				14E06D4F27B3DAFA007754F4 /* MetaDataPlistCreator */,
 				FD7A061F167715A0004BBEB6 /* Frameworks */,
 				FD7A061D167715A0004BBEB6 /* Products */,
 			);
@@ -429,6 +462,7 @@
 				14B7A2931DE9B65D0051AED7 /* libPhoneNumberiOSTests.xctest */,
 				7C72507C1E0EBE7D00F916ED /* libPhoneNumbermacOS.framework */,
 				8B1FEF731EB7BE7C00FBDE87 /* SwiftDemo.app */,
+				14E06D4E27B3DAFA007754F4 /* MetaDataPlistCreator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -474,7 +508,6 @@
 			children = (
 				FD12C2681A87401B00B53856 /* NBMetadataHelper.h */,
 				FD12C2691A87401B00B53856 /* NBMetadataHelper.m */,
-				8BB73AA71E7C9C6700B0691B /* NBGeneratedPhoneNumberMetaData.h */,
 				FD379E291A8AE5150015C184 /* NBPhoneNumberMetadata.plist */,
 			);
 			name = Metadata;
@@ -487,7 +520,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1FEFA11EB7BFC500FBDE87 /* NBGeneratedPhoneNumberMetaData.h in Headers */,
 				1F31D5461DDD478300257818 /* NBPhoneMetaData.h in Headers */,
 				1F31D5401DDD477300257818 /* NBPhoneNumber.h in Headers */,
 				1F31D5421DDD477800257818 /* NBNumberFormat.h in Headers */,
@@ -507,7 +539,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1FEFA21EB7BFC600FBDE87 /* NBGeneratedPhoneNumberMetaData.h in Headers */,
 				1F31D5511DDD47BA00257818 /* libPhoneNumbertvOS.h in Headers */,
 				1F31D5551DDD47EB00257818 /* NBMetadataHelper.h in Headers */,
 				1F31D5621DDD482C00257818 /* NBPhoneMetaData.h in Headers */,
@@ -527,7 +558,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1FEFA01EB7BFC500FBDE87 /* NBGeneratedPhoneNumberMetaData.h in Headers */,
 				A025047D214C61FD00AFC260 /* NBPhoneNumberUtil+ShortNumberTestHelper.h in Headers */,
 				0F2870981FCF8F13006230BF /* NBRegExMatcher.h in Headers */,
 				34ACBBB61B7124AB0064B3BD /* NBPhoneNumberDefines.h in Headers */,
@@ -549,7 +579,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1FEFA31EB7BFC600FBDE87 /* NBGeneratedPhoneNumberMetaData.h in Headers */,
 				7C7250801E0EBE7D00F916ED /* libPhoneNumbermacOS.h in Headers */,
 				7C72508E1E0EC05900F916ED /* NBMetadataHelper.h in Headers */,
 				7C7250941E0EC06900F916ED /* NBPhoneMetaData.h in Headers */,
@@ -584,6 +613,23 @@
 			productName = libPhoneNumberiOSTests;
 			productReference = 14B7A2931DE9B65D0051AED7 /* libPhoneNumberiOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14E06D4D27B3DAFA007754F4 /* MetaDataPlistCreator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14E06D5427B3DAFA007754F4 /* Build configuration list for PBXNativeTarget "MetaDataPlistCreator" */;
+			buildPhases = (
+				14E06D4A27B3DAFA007754F4 /* Sources */,
+				14E06D4B27B3DAFA007754F4 /* Frameworks */,
+				14E06D4C27B3DAFA007754F4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetaDataPlistCreator;
+			productName = MetaDataPlistCreator;
+			productReference = 14E06D4E27B3DAFA007754F4 /* MetaDataPlistCreator */;
+			productType = "com.apple.product-type.tool";
 		};
 		1F31D5291DDD46B100257818 /* libPhoneNumberwatchOS */ = {
 			isa = PBXNativeTarget;
@@ -690,6 +736,10 @@
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
+					14E06D4D27B3DAFA007754F4 = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					1F31D5291DDD46B100257818 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -716,6 +766,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				Base,
 			);
 			mainGroup = FD7A0611167715A0004BBEB6;
@@ -729,6 +780,7 @@
 				7C72507B1E0EBE7D00F916ED /* libPhoneNumbermacOS */,
 				14B7A2921DE9B65D0051AED7 /* libPhoneNumberiOSTests */,
 				8B1FEF721EB7BE7C00FBDE87 /* SwiftDemo */,
+				14E06D4D27B3DAFA007754F4 /* MetaDataPlistCreator */,
 			);
 		};
 /* End PBXProject section */
@@ -802,6 +854,15 @@
 				0F2870AF1FCF961C006230BF /* NBRegExMatcher.m in Sources */,
 				14B7A2B61DE9BF160051AED7 /* NBAsYouTypeFormatter.m in Sources */,
 				0F2870B11FCF9620006230BF /* NBRegularExpressionCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E06D4A27B3DAFA007754F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E06D5727B3DDF0007754F4 /* MetaDataPlistCreator.m in Sources */,
+				14E06D5127B3DAFA007754F4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -979,6 +1040,73 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = me.ohtalk.libPhoneNumberiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		14E06D5227B3DAFA007754F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				TARGETED_DEVICE_FAMILY = "";
+				VALID_ARCHS = "arm64 x86_64";
+			};
+			name = Debug;
+		};
+		14E06D5327B3DAFA007754F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				TARGETED_DEVICE_FAMILY = "";
+				VALID_ARCHS = "arm64 x86_64";
 			};
 			name = Release;
 		};
@@ -1476,6 +1604,15 @@
 			buildConfigurations = (
 				14B7A29C1DE9B65D0051AED7 /* Debug */,
 				14B7A29D1DE9B65D0051AED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14E06D5427B3DAFA007754F4 /* Build configuration list for PBXNativeTarget "MetaDataPlistCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E06D5227B3DAFA007754F4 /* Debug */,
+				14E06D5327B3DAFA007754F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
