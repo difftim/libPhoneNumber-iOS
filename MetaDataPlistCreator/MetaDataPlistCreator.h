@@ -15,20 +15,6 @@
 
 + (BOOL) createPlistFile:(NSString*) path;
 
-+ (NSDictionary *)jsonObjectFromZippedDataWithBytes:(z_const Bytef [])bytes
-                                   compressedLength:(NSUInteger)compressedLength
-                                     expandedLength:(NSUInteger)expandedLength;
-
-+ (NSDictionary<NSObject *, NSObject *> *)deduplicateJsonMap:(NSDictionary<NSObject *, NSObject *> *)inputMap;
-
-+ (NSObject *)deduplicateJsonValue:(NSObject *)jsonValue valueSet:(NSMutableSet<NSObject *> *)valueSet;
-
-+ (NSArray<NSObject *> *)deduplicateJsonArray:(NSArray<NSObject *> *)jsonArray
-                                     valueSet:(NSMutableSet<NSObject *> *)valueSet;
-
-+ (NSDictionary<NSObject *, NSObject *> *)deduplicateJsonDictionary:(NSDictionary<NSObject *, NSObject *> *)jsonDictionary
-                                                           valueSet:(NSMutableSet<NSObject *> *)valueSet;
-
 @end
 
 #endif /* MetaDataPlistCreator_h */

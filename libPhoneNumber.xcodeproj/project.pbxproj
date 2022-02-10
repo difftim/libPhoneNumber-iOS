@@ -176,7 +176,7 @@
 		1485C5251E06F4890092F541 /* NBPhoneNumberUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberUtilTest.m; path = libPhoneNumberTests/NBPhoneNumberUtilTest.m; sourceTree = SOURCE_ROOT; };
 		1485C52B1E06F4930092F541 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = libPhoneNumberTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		14B7A2931DE9B65D0051AED7 /* libPhoneNumberiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libPhoneNumberiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14E06D4E27B3DAFA007754F4 /* MetaDataPlistCreator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MetaDataPlistCreator; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E06D4E27B3DAFA007754F4 /* createPlistFromHeader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = createPlistFromHeader; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E06D5027B3DAFA007754F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14E06D5527B3DDDB007754F4 /* MetaDataPlistCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetaDataPlistCreator.h; sourceTree = "<group>"; };
 		14E06D5627B3DDF0007754F4 /* MetaDataPlistCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetaDataPlistCreator.m; sourceTree = "<group>"; };
@@ -462,7 +462,7 @@
 				14B7A2931DE9B65D0051AED7 /* libPhoneNumberiOSTests.xctest */,
 				7C72507C1E0EBE7D00F916ED /* libPhoneNumbermacOS.framework */,
 				8B1FEF731EB7BE7C00FBDE87 /* SwiftDemo.app */,
-				14E06D4E27B3DAFA007754F4 /* MetaDataPlistCreator */,
+				14E06D4E27B3DAFA007754F4 /* createPlistFromHeader */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -628,7 +628,7 @@
 			);
 			name = MetaDataPlistCreator;
 			productName = MetaDataPlistCreator;
-			productReference = 14E06D4E27B3DAFA007754F4 /* MetaDataPlistCreator */;
+			productReference = 14E06D4E27B3DAFA007754F4 /* createPlistFromHeader */;
 			productType = "com.apple.product-type.tool";
 		};
 		1F31D5291DDD46B100257818 /* libPhoneNumberwatchOS */ = {
@@ -1064,11 +1064,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INSTALL_PATH = .;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = createPlistFromHeader;
 				SDKROOT = macosx;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				TARGETED_DEVICE_FAMILY = "";
@@ -1099,10 +1100,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INSTALL_PATH = .;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = createPlistFromHeader;
 				SDKROOT = macosx;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				TARGETED_DEVICE_FAMILY = "";

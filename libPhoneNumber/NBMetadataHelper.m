@@ -73,6 +73,7 @@ static NSString *StringByTrimming(NSString *aString) {
               NSSet *allowedClasses = [NSSet setWithArray:@[NSArray.class, NSDictionary.class, NSNull.class, NSString.class, NSNumber.class]];
               result = (NSDictionary *)[unarchiver decodeObjectOfClasses:allowedClasses forKey:NSKeyedArchiveRootObjectKey];
           }
+          NSAssert(result != nil, @"phoneNumberMap.plist missing or corrupt");
       }
   });
   return result;
